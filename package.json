@@ -4,6 +4,7 @@
   "description": "Helper functions for practising BDD with Mocha",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +26,11 @@
     "node": ">=8.9.1",
     "npm": ">=5.5.1"
   },
+  "peerDependencies": {
+    "mocha": "^4.0.1"
+  },
   "devDependencies": {
+    "mocha": "^4.0.1",
     "prettier": "^1.8.2"
   }
 }

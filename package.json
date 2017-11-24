@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/willclarktech/mocha-bdd/issues"
   },
-  "homepage": "https://github.com/willclarktech/mocha-bdd#readme"
+  "homepage": "https://github.com/willclarktech/mocha-bdd#readme",
+  "engines": {
+    "node": ">=8.9.1",
+    "npm": ">=5.5.1"
+  }
 }

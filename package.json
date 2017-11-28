@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write index.js test/*.js",
-    "test": "mocha"
+    "test": "mocha test/local.js && mocha test/global.js"
   },
   "repository": {
     "type": "git",

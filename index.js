@@ -1,3 +1,5 @@
+'use strict';
+
 const getTestFn = (rootTestFn, { only, skip } = {}) => {
   if (only) return rootTestFn.only;
   if (skip) return rootTestFn.skip;
@@ -39,7 +41,11 @@ const setGlobals = () => {
   global.Then = Then;
 };
 
-module.exports = setGlobals;
-module.exports.Given = Given;
-module.exports.When = When;
-module.exports.Then = Then;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+})
+
+exports.default = setGlobals;
+exports.Given = Given;
+exports.When = When;
+exports.Then = Then;

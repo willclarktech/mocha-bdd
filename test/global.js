@@ -1,7 +1,7 @@
-const setUpGlobals = require("../");
+const { default: setGlobals } = require("../");
 const { given, when, then } = require("./steps");
 
-setUpGlobals();
+setGlobals();
 
 describe("global", () => {
   Given("some condition", given, () => {
